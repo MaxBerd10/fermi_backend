@@ -1,0 +1,52 @@
+.pagination{
+
+    display: flex;
+    margin-left: 0px;
+    margin-top: 15px;
+}
+
+.page-item{
+    height: 40px;
+    color: #0088cc;
+    float: left;
+    padding: 0px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    padding-top: 8px;
+}
+.p-active .page-item
+{
+    background-color: #0088cc;
+    color: white!important;
+}
+.p-last{
+    color: black;
+    float: left;
+    padding: 0px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+.disabled
+{
+
+    color: #0088cc;;
+    float: left;
+    padding: 0px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    padding-top: 8px;
+
+}
+#text{
+color: #373638;!important;
+    margin-bottom: 200px;
+}
+.yangilik_lar .yangiliklar_wrapper .yangiliklar_items .yangiliklar_item .yangiliklar_item_content {
+    box-shadow: 0px 1px 10px #00006420;
+    padding: 10px;
+    margin-bottom: 10px;
+    min-height: 295px!important;
+}

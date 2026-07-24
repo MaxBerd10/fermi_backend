@@ -1,0 +1,59 @@
+.loader{
+	position: fixed;
+	top: 0;   left: 0;
+	width: 100%;   height: 100%;
+	background: rgba(0,0,0,.2);
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: fadeOut 1s;
+	animation-delay: 1s;
+}
+.loaders{
+	position: relative;
+	width: 100px;
+	height: 100px;
+}
+.loaders div{
+	position: absolute;
+	border: 3px solid transparent;
+	border-top-color: #379604;
+	border-bottom-color: #379604;
+	transform: rotate(15deg);
+	border-radius: 100px;
+}
+
+.loaders .one{
+	width: 100%; height: 100%;
+	top: 0; left: 0;
+	animation: rotate 1s ease infinite;
+}
+.loaders .two{
+	width: 70%; height: 70%;
+	top:15%; left: 15%;
+	transform: rotate(90deg);
+	animation: rotate2 1s ease infinite;
+}
+
+@keyframes rotate{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotate2{
+	0%{
+		transform: rotate(90deg);
+	}
+	100%{
+		transform: rotate(-450deg);
+	}
+}
+
+@keyframes fadeOut{
+	100%{
+		opacity: 0;
+	}
+}
+
+		

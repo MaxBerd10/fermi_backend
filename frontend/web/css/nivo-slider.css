@@ -1,0 +1,117 @@
+.nivoSlider {
+	POSITION: relative
+}
+.nivoSlider IMG {
+	POSITION: absolute; TOP: 0px; LEFT: 0px
+}
+.nivoSlider A.nivo-imageLink {
+	Z-INDEX: 8; BORDER-BOTTOM: 0px; POSITION: absolute; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; DISPLAY: none; HEIGHT: 100%; BORDER-TOP: 0px; TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px; LEFT: 0px
+}
+.nivo-slice {
+	Z-INDEX: 5; POSITION: absolute; DISPLAY: block; HEIGHT: 100%
+}
+.nivo-box {
+	Z-INDEX: 5; POSITION: absolute; DISPLAY: block
+}
+.nivo-caption {
+	Z-INDEX: 7; POSITION: absolute; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 100%; BOTTOM: 0px; PADDING-RIGHT: 0px; BACKGROUND: url(/image/banner/baner-bg.png) repeat-y 0px 0px; COLOR: #fff; PADDING-TOP: 0px; LEFT: 0px; opacity: 0.8
+}
+.nivo-caption STRONG {
+	FONT-SIZE: 30px; FONT-WEIGHT: normal; PADDING-TOP: 12px
+}
+.nivo-caption P {
+	PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 5px
+}
+.nivo-caption A {
+	DISPLAY: inline !important
+}
+.nivo-html-caption {
+	DISPLAY: none
+}
+.nivo-directionNav A {
+	Z-INDEX: 9; POSITION: absolute; CURSOR: pointer;
+}
+.nivo-prevNav {
+	LEFT: 0px
+}
+.nivo-nextNav {
+	RIGHT: 0px
+}
+.nivo-controlNav A {
+	Z-INDEX: 9; POSITION: relative; CURSOR: pointer
+}
+.nivo-controlNav A.active {
+	FONT-WEIGHT: bold
+}
+
+#slider {
+	POSITION: relative; WIDTH: 1050px; HEIGHT: 375px;
+}
+
+.nivoSlider IMG {
+	POSITION: absolute; DISPLAY: none; TOP: 0px; LEFT: 0px;
+}
+.nivoSlider A {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; DISPLAY: block; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.nivo-controlNav {
+	POSITION: absolute; BOTTOM: 7px; LEFT: 20px
+}
+.nivo-controlNav A 
+{
+    BORDER-BOTTOM: 0px; 
+    BORDER-LEFT: 0px; 
+    TEXT-INDENT: -9999px; 
+    WIDTH: 22px; 
+    DISPLAY: none; 
+    BACKGROUND: url(../img/bullets.png) no-repeat; 
+    FLOAT: left; 
+    HEIGHT: 22px; 
+    BORDER-TOP: 0px; 
+    MARGIN-RIGHT: 3px; 
+    BORDER-RIGHT: 0px
+}
+.nivo-controlNav A.active 
+{
+    BACKGROUND-POSITION: 0px -22px
+}
+.nivo-directionNav A 
+{
+    BORDER-BOTTOM: 0px; 
+    BORDER-LEFT: 0px; 
+    TEXT-INDENT: -9999px; 
+    WIDTH: 100px; 
+    DISPLAY: block;      
+    HEIGHT: 100%; 
+    BORDER-TOP: 0px;
+    BORDER-RIGHT: 0px    
+}
+A.nivo-nextNav 
+{
+    RIGHT: 0px;
+    BACKGROUND: url(../img/arrow_right.png) center center no-repeat rgba(0, 0, 0, 0.2);
+}
+A.nivo-prevNav 
+{
+    LEFT: 0px;
+    BACKGROUND: url(../img/arrow_left.png) center center no-repeat rgba(0, 0, 0, 0.2);
+}
+.nivo-caption 
+{
+    font-family: 'Arial Black';
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 35px;
+    text-align: left;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;    
+    width: 850px;
+    padding: 5px 100px;
+    text-align: center;
+    text-shadow: 0px 0px 1px rgb(0,0,0);
+}
+.nivo-caption A 
+{
+    COLOR: #efe9d1; TEXT-DECORATION: underline
+}

@@ -1,0 +1,38 @@
+# Composer dependencies — regenerated on the server via `composer install`
+/vendor
+
+# Environment-specific configs contain real DB passwords / JWT secrets —
+# never commit these. Each app needs its own *-local.php created by hand
+# on the server (see deployment notes).
+/api/config/main-local.php
+/api/config/params-local.php
+/backend/config/main-local.php
+/backend/config/params-local.php
+/common/config/main-local.php
+/common/config/params-local.php
+/console/config/main-local.php
+/console/config/params-local.php
+/frontend/config/main-local.php
+/frontend/config/params-local.php
+
+# Runtime artifacts
+/*/runtime
+/*/web/assets
+
+# The DB dump is 277MB and uploads/ is ~20GB — both transferred separately
+# (mysqldump + rsync/scp), never through git.
+*.sql
+/frontend/web/uploads
+
+# Leftover full-site backup archives (28GB) and PHP error logs — not part
+# of the application, never belong in git.
+/frontend/web/archive*.tar.gz
+/*/web/error_log
+
+.idea
+.DS_Store
+*.log
+
+# Unrelated duplicate React app copy (the real one lives in ../design) —
+# not part of this PHP backend.
+/web

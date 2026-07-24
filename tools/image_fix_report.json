@@ -1,0 +1,926 @@
+{
+  "ok": 310,
+  "fixed": 131,
+  "missing": 109,
+  "downloaded": 821,
+  "column_updates": [
+    {
+      "table": "departments",
+      "id": "3",
+      "column": "img",
+      "from": "/uploads/img/kafedra/Kafedra%20logo/Sayt%20uchun/Pediatriya%20kafedrasi.jpg",
+      "to": "/uploads/img/kafedra/Kafedra logo/Sayt uchun/Pediatriya kafedrasi.jpg"
+    },
+    {
+      "table": "departments",
+      "id": "5",
+      "column": "img",
+      "from": "/uploads/img/kafedra/Kafedra%20logo/Sayt%20uchun/Xorijiy%20tillar.jpg",
+      "to": "/uploads/img/kafedra/Kafedra logo/Sayt uchun/Xorijiy tillar.jpg"
+    },
+    {
+      "table": "departments",
+      "id": "6",
+      "column": "img",
+      "from": "/uploads/img/kafedra/Kafedra%20logo/Sayt%20uchun/Kommunal.jpg",
+      "to": "/uploads/img/kafedra/Kafedra logo/Sayt uchun/Kommunal.jpg"
+    },
+    {
+      "table": "departments",
+      "id": "8",
+      "column": "img",
+      "from": "/uploads/img/kafedra/Kafedra%20logo/Sayt%20uchun/Epid%20kafedrasi.jpg",
+      "to": "/uploads/img/kafedra/Kafedra logo/Sayt uchun/Epid kafedrasi.jpg"
+    },
+    {
+      "table": "departments",
+      "id": "12",
+      "column": "img",
+      "from": "/uploads/img/kafedra/Kafedra%20logo/Sayt%20uchun/Ovqatlanish%20kafedrasi.jpg",
+      "to": "/uploads/img/kafedra/Kafedra logo/Sayt uchun/Ovqatlanish kafedrasi.jpg"
+    },
+    {
+      "table": "departments",
+      "id": "20",
+      "column": "img",
+      "from": "/uploads/img/kafedra/Kafedra%20logo/Sayt%20uchun/Pedagogika%20va%20psixologiya.jpg",
+      "to": "/uploads/img/kafedra/Kafedra logo/Sayt uchun/Pedagogika va psixologiya.jpg"
+    },
+    {
+      "table": "departments",
+      "id": "23",
+      "column": "img",
+      "from": "/uploads/img/kafedra/Kafedra%20logo/Sayt%20uchun/IKP.jpg",
+      "to": "/uploads/img/kafedra/Kafedra logo/Sayt uchun/IKP.jpg"
+    },
+    {
+      "table": "departments",
+      "id": "28",
+      "column": "img",
+      "from": "/uploads/img/kafedra/Kafedra%20logo/Sayt%20uchun/Fiziologiya.jpg",
+      "to": "/uploads/img/kafedra/Kafedra logo/Sayt uchun/Fiziologiya.jpg"
+    },
+    {
+      "table": "departments",
+      "id": "29",
+      "column": "img",
+      "from": "/uploads/img/kafedra/Kafedra%20logo/Sayt%20uchun/Xalqa%20tabobati.jpg",
+      "to": "/uploads/img/kafedra/Kafedra logo/Sayt uchun/Xalqa tabobati.jpg"
+    },
+    {
+      "table": "departments",
+      "id": "30",
+      "column": "img",
+      "from": "/uploads/img/kafedra/Kafedra%20logo/Sayt%20uchun/JS%20kafedrasi.jpg",
+      "to": "/uploads/img/kafedra/Kafedra logo/Sayt uchun/JS kafedrasi.jpg"
+    },
+    {
+      "table": "departments",
+      "id": "37",
+      "column": "img",
+      "from": "/uploads/img/kafedra/Kafedra%20logo/Sayt%20uchun/UASH.jpg",
+      "to": "/uploads/img/kafedra/Kafedra logo/Sayt uchun/UASH.jpg"
+    },
+    {
+      "table": "departments",
+      "id": "40",
+      "column": "img",
+      "from": "/uploads/img/kafedra/Urologiya%20kafedrasi/UROLOGIYA.png",
+      "to": "/uploads/img/kafedra/Urologiya kafedrasi/UROLOGIYA.png"
+    },
+    {
+      "table": "faculty",
+      "id": "4",
+      "column": "img",
+      "from": "/uploads/img/fakultet/Pediatriya%20fakulteti/logo%20ped.jpg",
+      "to": "/uploads/img/fakultet/Pediatriya fakulteti/logo ped.jpg"
+    },
+    {
+      "table": "img",
+      "id": "32",
+      "column": "img",
+      "from": "/uploads/img/photo_2021-11-01_17-17-49%20%282%29.jpg",
+      "to": "/uploads/img/photo_2021-11-01_17-17-49 (2).jpg"
+    },
+    {
+      "table": "img",
+      "id": "45",
+      "column": "img",
+      "from": "/uploads/img/yangilikar/Klinik%20va%20profilaktik%20tibbiyot%20jurnali/JCPM%20journal-2023.jpg",
+      "to": "/uploads/img/yangilikar/Klinik va profilaktik tibbiyot jurnali/JCPM journal-2023.jpg"
+    },
+    {
+      "table": "img",
+      "id": "51",
+      "column": "img",
+      "from": "/uploads/img/yangilikar/Tibbiy%20ko%60rik.jpg",
+      "to": "/uploads/img/yangilikar/Tibbiy ko`rik.jpg"
+    },
+    {
+      "table": "img",
+      "id": "55",
+      "column": "img",
+      "from": "/uploads/img/yangilikar/ecaqa%20en.jpg",
+      "to": "/uploads/img/yangilikar/ecaqa en.jpg"
+    },
+    {
+      "table": "img",
+      "id": "59",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/8%20mart%20tadbiri.jpg",
+      "to": "/uploads/img/fotogallery/8 mart tadbiri.jpg"
+    },
+    {
+      "table": "img",
+      "id": "69",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/obod%20mahhala-fjsti.jpg",
+      "to": "/uploads/img/fotogallery/obod mahhala-fjsti.jpg"
+    },
+    {
+      "table": "img",
+      "id": "70",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/obod%20mahalla.jpg",
+      "to": "/uploads/img/fotogallery/obod mahalla.jpg"
+    },
+    {
+      "table": "img",
+      "id": "75",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/Talabalar%20amaliyoti.jpg",
+      "to": "/uploads/img/fotogallery/Talabalar amaliyoti.jpg"
+    },
+    {
+      "table": "img",
+      "id": "78",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/yangi%20kampusdan%20lavhalar.jpg",
+      "to": "/uploads/img/fotogallery/yangi kampusdan lavhalar.jpg"
+    },
+    {
+      "table": "img",
+      "id": "80",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/yangi%20kampus.jpg",
+      "to": "/uploads/img/fotogallery/yangi kampus.jpg"
+    },
+    {
+      "table": "img",
+      "id": "81",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/yangi%20kampus.jpg",
+      "to": "/uploads/img/fotogallery/yangi kampus.jpg"
+    },
+    {
+      "table": "img",
+      "id": "83",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/tadbir%20fotolavhalar.jpg",
+      "to": "/uploads/img/fotogallery/tadbir fotolavhalar.jpg"
+    },
+    {
+      "table": "img",
+      "id": "91",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/ILMIY%20KENGASH.jpg",
+      "to": "/uploads/img/fotogallery/ILMIY KENGASH.jpg"
+    },
+    {
+      "table": "img",
+      "id": "95",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/xalqaro%20konferensiya..jpg",
+      "to": "/uploads/img/fotogallery/xalqaro konferensiya..jpg"
+    },
+    {
+      "table": "img",
+      "id": "96",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/xalqaro%20konferensiya%20akusherlik.jpg",
+      "to": "/uploads/img/fotogallery/xalqaro konferensiya akusherlik.jpg"
+    },
+    {
+      "table": "img",
+      "id": "106",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/DERMATOLOGY%20CONFERENCE/BANNER%20DERMO-1%20zal.jpg",
+      "to": "/uploads/img/fotogallery/DERMATOLOGY CONFERENCE/BANNER DERMO-1 zal.jpg"
+    },
+    {
+      "table": "img",
+      "id": "109",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/DERMATOLOGY%20CONFERENCE/photo_2024-05-10_20-05-44.jpg",
+      "to": "/uploads/img/fotogallery/DERMATOLOGY CONFERENCE/photo_2024-05-10_20-05-44.jpg"
+    },
+    {
+      "table": "img",
+      "id": "111",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/DERMATOLOGY%20CONFERENCE/photo_2024-05-10_20-05-45.jpg",
+      "to": "/uploads/img/fotogallery/DERMATOLOGY CONFERENCE/photo_2024-05-10_20-05-45.jpg"
+    },
+    {
+      "table": "img",
+      "id": "113",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/DERMATOLOGY%20CONFERENCE/dermo-3.jpg",
+      "to": "/uploads/img/fotogallery/DERMATOLOGY CONFERENCE/dermo-3.jpg"
+    },
+    {
+      "table": "img",
+      "id": "114",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/DERMATOLOGY%20CONFERENCE/04.jpg",
+      "to": "/uploads/img/fotogallery/DERMATOLOGY CONFERENCE/04.jpg"
+    },
+    {
+      "table": "img",
+      "id": "115",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/DERMATOLOGY%20CONFERENCE/07.jpg",
+      "to": "/uploads/img/fotogallery/DERMATOLOGY CONFERENCE/07.jpg"
+    },
+    {
+      "table": "img",
+      "id": "116",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/Yoshlar%20ittifoqi.jpg",
+      "to": "/uploads/img/fotogallery/Yoshlar ittifoqi.jpg"
+    },
+    {
+      "table": "img",
+      "id": "121",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/Endokrinologiya%20konferensiya/Endokrinologiya.jpg",
+      "to": "/uploads/img/fotogallery/Endokrinologiya konferensiya/Endokrinologiya.jpg"
+    },
+    {
+      "table": "img",
+      "id": "123",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/II%20Yoshlar%20akademiyasi%20forumi.jpg",
+      "to": "/uploads/img/fotogallery/II Yoshlar akademiyasi forumi.jpg"
+    },
+    {
+      "table": "img",
+      "id": "124",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/yoshlar%20akademiyasi-1.jpg",
+      "to": "/uploads/img/fotogallery/yoshlar akademiyasi-1.jpg"
+    },
+    {
+      "table": "img",
+      "id": "138",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/QABUL-2024/bakalavriat%20kvota-2024.jpg",
+      "to": "/uploads/img/fotogallery/QABUL-2024/bakalavriat kvota-2024.jpg"
+    },
+    {
+      "table": "img",
+      "id": "142",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/QABUL-2024/Qabul%20monitoringi-2024.jpg",
+      "to": "/uploads/img/fotogallery/QABUL-2024/Qabul monitoringi-2024.jpg"
+    },
+    {
+      "table": "img",
+      "id": "146",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/photo_2024-10-16_16-25-59%20%283%29.jpg",
+      "to": "/uploads/img/fotogallery/photo_2024-10-16_16-25-59 (3).jpg"
+    },
+    {
+      "table": "img",
+      "id": "154",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/2025/Rektor%20va%20talabalar%20uchrashuvi/Rekotr%20va%20talabalar%20uchrashuvi.jpg",
+      "to": "/uploads/img/fotogallery/2025/Rektor va talabalar uchrashuvi/Rekotr va talabalar uchrashuvi.jpg"
+    },
+    {
+      "table": "img",
+      "id": "155",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/2025/Rektor%20va%20talabalar%20uchrashuvi/Rektor%20talaba%20uchrashuvi_2.jpg",
+      "to": "/uploads/img/fotogallery/2025/Rektor va talabalar uchrashuvi/Rektor talaba uchrashuvi_2.jpg"
+    },
+    {
+      "table": "img",
+      "id": "156",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/2025/Rektor%20va%20talabalar%20uchrashuvi/Rektor%20va%20yoshlar%20uchrashuvi.jpg",
+      "to": "/uploads/img/fotogallery/2025/Rektor va talabalar uchrashuvi/Rektor va yoshlar uchrashuvi.jpg"
+    },
+    {
+      "table": "img",
+      "id": "169",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/2025/Turk%20visit%20memorandum.jpg",
+      "to": "/uploads/img/fotogallery/2025/Turk visit memorandum.jpg"
+    },
+    {
+      "table": "img",
+      "id": "179",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/2025/Thumbay%20College/Thumbay%20Fergana.jpg",
+      "to": "/uploads/img/fotogallery/2025/Thumbay College/Thumbay Fergana.jpg"
+    },
+    {
+      "table": "img",
+      "id": "185",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/2025/Xorijiy%20talabalar.jpg",
+      "to": "/uploads/img/fotogallery/2025/Xorijiy talabalar.jpg"
+    },
+    {
+      "table": "img",
+      "id": "186",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/2025/Xorijiy%20talabalar-2025.jpg",
+      "to": "/uploads/img/fotogallery/2025/Xorijiy talabalar-2025.jpg"
+    },
+    {
+      "table": "img",
+      "id": "187",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/2025/Yashil%20universitet-2025.jpg",
+      "to": "/uploads/img/fotogallery/2025/Yashil universitet-2025.jpg"
+    },
+    {
+      "table": "img",
+      "id": "189",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/2025/Mehr%20muruvvat.jpg",
+      "to": "/uploads/img/fotogallery/2025/Mehr muruvvat.jpg"
+    },
+    {
+      "table": "img",
+      "id": "197",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/Xorijiy%20talabalar/photo_2025-10-20_23-09-38.jpg",
+      "to": "/uploads/img/fotogallery/Xorijiy talabalar/photo_2025-10-20_23-09-38.jpg"
+    },
+    {
+      "table": "img",
+      "id": "199",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/Xorijiy%20talabalar/photo_2025-10-20_23-09-44.jpg",
+      "to": "/uploads/img/fotogallery/Xorijiy talabalar/photo_2025-10-20_23-09-44.jpg"
+    },
+    {
+      "table": "img",
+      "id": "201",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/2025/Qovun%20sayli/photo_2025-10-23_09-44-09.jpg",
+      "to": "/uploads/img/fotogallery/2025/Qovun sayli/photo_2025-10-23_09-44-09.jpg"
+    },
+    {
+      "table": "img",
+      "id": "202",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/2025/Qovun%20sayli/photo_2025-10-23_09-44-10.jpg",
+      "to": "/uploads/img/fotogallery/2025/Qovun sayli/photo_2025-10-23_09-44-10.jpg"
+    },
+    {
+      "table": "img",
+      "id": "203",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/2025/Qovun%20sayli/photo_2025-10-23_09-44-11%20%282%29.jpg",
+      "to": "/uploads/img/fotogallery/2025/Qovun sayli/photo_2025-10-23_09-44-11 (2).jpg"
+    },
+    {
+      "table": "img",
+      "id": "233",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/2025/EGE%20university-2025.jpg",
+      "to": "/uploads/img/fotogallery/2025/EGE university-2025.jpg"
+    },
+    {
+      "table": "img",
+      "id": "234",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/2025/Talabalar%20xayoti/01.jpg",
+      "to": "/uploads/img/fotogallery/2025/Talabalar xayoti/01.jpg"
+    },
+    {
+      "table": "img",
+      "id": "238",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/2025/Talabalar%20xayoti/05.jpg",
+      "to": "/uploads/img/fotogallery/2025/Talabalar xayoti/05.jpg"
+    },
+    {
+      "table": "img",
+      "id": "242",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/2025/Thumbay%20College/Thumbay-1.jpg",
+      "to": "/uploads/img/fotogallery/2025/Thumbay College/Thumbay-1.jpg"
+    },
+    {
+      "table": "img",
+      "id": "248",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/2026/uz%20iftixorlari.jpg",
+      "to": "/uploads/img/fotogallery/2026/uz iftixorlari.jpg"
+    },
+    {
+      "table": "img",
+      "id": "250",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/2026/Rektor%20va%20talabalar%20uchrashuvi.jpg",
+      "to": "/uploads/img/fotogallery/2026/Rektor va talabalar uchrashuvi.jpg"
+    },
+    {
+      "table": "leader",
+      "id": "5",
+      "column": "rasm",
+      "from": "/uploads/img/Rektorat%20va%20Dekanat/photo_2022-10-25_11-11-14.jpg",
+      "to": "/uploads/img/Rektorat va Dekanat/photo_2022-10-25_11-11-14.jpg"
+    },
+    {
+      "table": "leader",
+      "id": "7",
+      "column": "rasm",
+      "from": "/uploads/img/kafedra/pedagogika/Munira%20Rasulovna.jpg",
+      "to": "/uploads/img/kafedra/pedagogika/Munira Rasulovna.jpg"
+    },
+    {
+      "table": "leader",
+      "id": "8",
+      "column": "rasm",
+      "from": "/uploads/img/kafedra/Urologiya%20kafedrasi/Fayzulla%20Yuldashevich.png",
+      "to": "/uploads/img/kafedra/Urologiya kafedrasi/Fayzulla Yuldashevich.png"
+    },
+    {
+      "table": "leader",
+      "id": "9",
+      "column": "rasm",
+      "from": "/uploads/img/Rektorat%20va%20Dekanat/photo_2025-03-25_13-19-37.jpg",
+      "to": "/uploads/img/Rektorat va Dekanat/photo_2025-03-25_13-19-37.jpg"
+    },
+    {
+      "table": "leader",
+      "id": "13",
+      "column": "rasm",
+      "from": "/uploads/img/Rektorat%20va%20Dekanat/Iriskulov%20U.jpg",
+      "to": "/uploads/img/Rektorat va Dekanat/Iriskulov U.jpg"
+    },
+    {
+      "table": "leader",
+      "id": "17",
+      "column": "rasm",
+      "from": "/uploads/img/kafedra/pedagogika/Munira%20Rasulovna.jpg",
+      "to": "/uploads/img/kafedra/pedagogika/Munira Rasulovna.jpg"
+    },
+    {
+      "table": "leader",
+      "id": "19",
+      "column": "rasm",
+      "from": "/uploads/img/kafedra/Kommunla%20va%20mehnat%20gigienasi/Ashurova%20M.png",
+      "to": "/uploads/img/kafedra/Kommunla va mehnat gigienasi/Ashurova M.png"
+    },
+    {
+      "table": "leader",
+      "id": "20",
+      "column": "rasm",
+      "from": "/uploads/img/kafedra/Akusher%20va%20ginekologiya/Madxiya%20ustozim.png",
+      "to": "/uploads/img/kafedra/Akusher va ginekologiya/Madxiya ustozim.png"
+    },
+    {
+      "table": "leader",
+      "id": "21",
+      "column": "rasm",
+      "from": "/uploads/img/kafedra/PTA%20va%20JSS%20kafedrasi/Ahmadaliyev%20R.png",
+      "to": "/uploads/img/kafedra/PTA va JSS kafedrasi/Ahmadaliyev R.png"
+    },
+    {
+      "table": "leader",
+      "id": "22",
+      "column": "rasm",
+      "from": "/uploads/img/kafedra/Epidemiologiya/Boltaboyev%20U.png",
+      "to": "/uploads/img/kafedra/Epidemiologiya/Boltaboyev U.png"
+    },
+    {
+      "table": "leader",
+      "id": "27",
+      "column": "rasm",
+      "from": "/uploads/img/kafedra/Ichki%20kasalliklar/Robiya%20opa.jpg",
+      "to": "/uploads/img/kafedra/Ichki kasalliklar/Robiya opa.jpg"
+    },
+    {
+      "table": "leader",
+      "id": "29",
+      "column": "rasm",
+      "from": "/uploads/img/kafedra/Fakultativ%20xirurgiya/image_1_1769235013523.jpg",
+      "to": "/uploads/img/kafedra/Fakultativ xirurgiya/image_1_1769235013523.jpg"
+    },
+    {
+      "table": "leader",
+      "id": "30",
+      "column": "rasm",
+      "from": "/uploads/img/kafedra/Patfiz%20va%20patan/Tulkin%20Zokirovich.png",
+      "to": "/uploads/img/kafedra/Patfiz va patan/Tulkin Zokirovich.png"
+    },
+    {
+      "table": "leader",
+      "id": "33",
+      "column": "rasm",
+      "from": "/uploads/img/kafedra/Tillar%20kafedrasi/Screenshot_1.png",
+      "to": "/uploads/img/kafedra/Tillar kafedrasi/Screenshot_1.png"
+    },
+    {
+      "table": "leader",
+      "id": "38",
+      "column": "rasm",
+      "from": "/uploads/img/kafedra/Gospital%20terapiya%20kafedrasi/Nurillo%20Ismoilovich%20(1).png",
+      "to": "/uploads/img/kafedra/Gospital terapiya kafedrasi/Nurillo Ismoilovich (1).png"
+    },
+    {
+      "table": "leader",
+      "id": "41",
+      "column": "rasm",
+      "from": "/uploads/img/kafedra/Urologiya%20kafedrasi/Fayzulla%20Yuldashevich.png",
+      "to": "/uploads/img/kafedra/Urologiya kafedrasi/Fayzulla Yuldashevich.png"
+    },
+    {
+      "table": "leader",
+      "id": "45",
+      "column": "rasm",
+      "from": "/uploads/img/kafedra/Umumiy%20jarroxlik%20kafedrasi/Sultangazi.png",
+      "to": "/uploads/img/kafedra/Umumiy jarroxlik kafedrasi/Sultangazi.png"
+    },
+    {
+      "table": "leader",
+      "id": "49",
+      "column": "rasm",
+      "from": "/uploads/img/Rektorat%20va%20Dekanat/Davolash/Yuldashev%20Muzaffar.jpg",
+      "to": "/uploads/img/Rektorat va Dekanat/Davolash/Yuldashev Muzaffar.jpg"
+    },
+    {
+      "table": "leader",
+      "id": "67",
+      "column": "rasm",
+      "from": "/uploads/img/kafedra/Tibbiy%20kimyo%20va%20biologiya/yoqkinoy.JPG",
+      "to": "/uploads/img/kafedra/Tibbiy kimyo va biologiya/yoqkinoy.JPG"
+    },
+    {
+      "table": "leader",
+      "id": "71",
+      "column": "rasm",
+      "from": "/uploads/img/tuzilma/Iqtidorli%20talabalar%20bo%60limi/image_1_1769234736865.jpg",
+      "to": "/uploads/img/tuzilma/Iqtidorli talabalar bo`limi/image_1_1769234736865.jpg"
+    },
+    {
+      "table": "leader",
+      "id": "74",
+      "column": "rasm",
+      "from": "/uploads/img/yangilikar/Texnikumlar/1%20Margilon%20TT/Direktor.JPG",
+      "to": "/uploads/img/yangilikar/Texnikumlar/1 Margilon TT/Direktor.JPG"
+    },
+    {
+      "table": "leader",
+      "id": "83",
+      "column": "rasm",
+      "from": "/uploads/img/Rektorat%20va%20Dekanat/Xalqaro%20fakultet/Konstantin%201.jpg",
+      "to": "/uploads/img/Rektorat va Dekanat/Xalqaro fakultet/Konstantin 1.jpg"
+    },
+    {
+      "table": "leader",
+      "id": "86",
+      "column": "rasm",
+      "from": "/uploads/img/fakultet/Pediatriya%20fakulteti/photo_2022-05-19_14-17-17.jpg",
+      "to": "/uploads/img/fakultet/Pediatriya fakulteti/photo_2022-05-19_14-17-17.jpg"
+    },
+    {
+      "table": "leader",
+      "id": "90",
+      "column": "rasm",
+      "from": "/uploads/img/kafedra/Biotibbiyot%20va%20Axborot%20Texnologiyalari/Firuz.png",
+      "to": "/uploads/img/kafedra/Biotibbiyot va Axborot Texnologiyalari/Firuz.png"
+    },
+    {
+      "table": "leader",
+      "id": "91",
+      "column": "rasm",
+      "from": "/uploads/img/kafedra/Urologiya%20kafedrasi/Fayzulla%20Yuldashevich.png",
+      "to": "/uploads/img/kafedra/Urologiya kafedrasi/Fayzulla Yuldashevich.png"
+    },
+    {
+      "table": "leader",
+      "id": "96",
+      "column": "rasm",
+      "from": "/uploads/img/Registrator%20ofisi/IMG_9118.JPG",
+      "to": "/uploads/img/Registrator ofisi/IMG_9118.JPG"
+    },
+    {
+      "table": "leader",
+      "id": "100",
+      "column": "rasm",
+      "from": "/uploads/img/Rektorat%20va%20Dekanat/TPI%20dekanat/Dilfuzaxon.jpg",
+      "to": "/uploads/img/Rektorat va Dekanat/TPI dekanat/Dilfuzaxon.jpg"
+    },
+    {
+      "table": "leader",
+      "id": "101",
+      "column": "rasm",
+      "from": "/uploads/img/Rektorat%20va%20Dekanat/TPI%20dekanat/Oydinoy.png",
+      "to": "/uploads/img/Rektorat va Dekanat/TPI dekanat/Oydinoy.png"
+    },
+    {
+      "table": "leader",
+      "id": "103",
+      "column": "rasm",
+      "from": "/uploads/img/Rektorat%20va%20Dekanat/Davolash/Valitov%20E.A..png",
+      "to": "/uploads/img/Rektorat va Dekanat/Davolash/Valitov E.A..png"
+    },
+    {
+      "table": "post",
+      "id": "165",
+      "column": "img",
+      "from": "/uploads/img/274150773_1102537040596115_3069507643225476028_n%20%281%29.jpg",
+      "to": "/uploads/img/274150773_1102537040596115_3069507643225476028_n (1).jpg"
+    },
+    {
+      "table": "post",
+      "id": "699",
+      "column": "img",
+      "from": "/uploads/img/yangilikar/To'mariz%20izdoshlari/photo_2026-04-21_00-15-56.jpg",
+      "to": "/uploads/img/yangilikar/To'mariz izdoshlari/photo_2026-04-21_00-15-56.jpg"
+    },
+    {
+      "table": "post",
+      "id": "706",
+      "column": "img",
+      "from": "/uploads/img/yangilikar/Bitiruv%202026/photo_2026-06-26_10-06-14.jpg",
+      "to": "/uploads/img/yangilikar/Bitiruv 2026/photo_2026-06-26_10-06-14.jpg"
+    },
+    {
+      "table": "post",
+      "id": "707",
+      "column": "img",
+      "from": "/uploads/img/yangilikar/sitefjsti.uz%20PINFL%20filetypexlsx.jpg",
+      "to": "/uploads/img/yangilikar/sitefjsti.uz PINFL filetypexlsx.jpg"
+    },
+    {
+      "table": "useful_sites",
+      "id": "7",
+      "column": "img",
+      "from": "/uploads/img/fotogallery/2025/Study%20in%20Uzbekistan.jpg",
+      "to": "/uploads/img/fotogallery/2025/Study in Uzbekistan.jpg"
+    },
+    {
+      "table": "video",
+      "id": "109",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Konferensiya%20tayyor%20rus%20re.mp4",
+      "to": "/uploads/img/yangilikar/video/Konferensiya tayyor rus re.mp4"
+    },
+    {
+      "table": "video",
+      "id": "120",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Ta%60lim%20va%20ijod/ta%60lim%20va%20ijod.mp4",
+      "to": "/uploads/img/yangilikar/video/Ta`lim va ijod/ta`lim va ijod.mp4"
+    },
+    {
+      "table": "video",
+      "id": "131",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/So%60x%20tumani/Tibbiyot%20instituti.MP4",
+      "to": "/uploads/img/yangilikar/video/So`x tumani/Tibbiyot instituti.MP4"
+    },
+    {
+      "table": "video",
+      "id": "132",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Rasmiy%20munosabat/rasmiy%20munosabat.MP4",
+      "to": "/uploads/img/yangilikar/video/Rasmiy munosabat/rasmiy munosabat.MP4"
+    },
+    {
+      "table": "video",
+      "id": "135",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Institut%20ochilish%20tadbiri/Farg%60ona%20jamoat%20salomatligi%20tibbiyot%20instituti.mp4",
+      "to": "/uploads/img/yangilikar/video/Institut ochilish tadbiri/Farg`ona jamoat salomatligi tibbiyot instituti.mp4"
+    },
+    {
+      "table": "video",
+      "id": "169",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Oramizdagilar/Marupova%20M.mp4",
+      "to": "/uploads/img/yangilikar/video/Oramizdagilar/Marupova M.mp4"
+    },
+    {
+      "table": "video",
+      "id": "172",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Oramizdagilar/gulbaxor%20batirovna.mp4",
+      "to": "/uploads/img/yangilikar/video/Oramizdagilar/gulbaxor batirovna.mp4"
+    },
+    {
+      "table": "video",
+      "id": "174",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/10-11%20may%20Dermatologiya/konferensiya%20dermatologiya.mp4",
+      "to": "/uploads/img/yangilikar/video/10-11 may Dermatologiya/konferensiya dermatologiya.mp4"
+    },
+    {
+      "table": "video",
+      "id": "180",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/san%20epid/video_2024-07-18_13-14-51.mp4",
+      "to": "/uploads/img/yangilikar/video/san epid/video_2024-07-18_13-14-51.mp4"
+    },
+    {
+      "table": "video",
+      "id": "186",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/9%20baza/Oq%20uy.mp4",
+      "to": "/uploads/img/yangilikar/video/9 baza/Oq uy.mp4"
+    },
+    {
+      "table": "video",
+      "id": "187",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Urologlar%20plenumi/Urologlar%20plenumi.mp4",
+      "to": "/uploads/img/yangilikar/video/Urologlar plenumi/Urologlar plenumi.mp4"
+    },
+    {
+      "table": "video",
+      "id": "189",
+      "column": "video",
+      "from": "/uploads/img/fotogallery/Franklin/Franklin%20Universiteti.mp4",
+      "to": "/uploads/img/fotogallery/Franklin/Franklin Universiteti.mp4"
+    },
+    {
+      "table": "video",
+      "id": "196",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Rasmiy%20munosabat/Fargona_inst_rus_Qisqasi_Finish.mp4",
+      "to": "/uploads/img/yangilikar/video/Rasmiy munosabat/Fargona_inst_rus_Qisqasi_Finish.mp4"
+    },
+    {
+      "table": "video",
+      "id": "197",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Rasmiy%20munosabat/Fargona_inst_rus_Qisqasi_Finish.mp4",
+      "to": "/uploads/img/yangilikar/video/Rasmiy munosabat/Fargona_inst_rus_Qisqasi_Finish.mp4"
+    },
+    {
+      "table": "video",
+      "id": "201",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Yangi%20yil-2025/14%20yanvar.mp4",
+      "to": "/uploads/img/yangilikar/video/Yangi yil-2025/14 yanvar.mp4"
+    },
+    {
+      "table": "video",
+      "id": "202",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Foregian%20students/Foregien%20language.mp4",
+      "to": "/uploads/img/yangilikar/video/Foregian students/Foregien language.mp4"
+    },
+    {
+      "table": "video",
+      "id": "205",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Yangi%20yil-2025/Dermatologiya.mp4",
+      "to": "/uploads/img/yangilikar/video/Yangi yil-2025/Dermatologiya.mp4"
+    },
+    {
+      "table": "video",
+      "id": "207",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Yangi%20yil-2025/Farg%27ona_ibbiyotidagi_islohotlar%2C_ilmy_amaliy_konferensiya.mp4",
+      "to": "/uploads/img/yangilikar/video/Yangi yil-2025/Farg'ona_ibbiyotidagi_islohotlar,_ilmy_amaliy_konferensiya.mp4"
+    },
+    {
+      "table": "video",
+      "id": "211",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Yangi%20yil-2025/rolik.mp4",
+      "to": "/uploads/img/yangilikar/video/Yangi yil-2025/rolik.mp4"
+    },
+    {
+      "table": "video",
+      "id": "213",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Yangi%20yil-2025/A.Navoiy.mp4",
+      "to": "/uploads/img/yangilikar/video/Yangi yil-2025/A.Navoiy.mp4"
+    },
+    {
+      "table": "video",
+      "id": "214",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Yangi%20yil-2025/Ulug%27bek%20vorislari%205.mp4",
+      "to": "/uploads/img/yangilikar/video/Yangi yil-2025/Ulug'bek vorislari 5.mp4"
+    },
+    {
+      "table": "video",
+      "id": "216",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Yangi%20yil-2025/Gulf%20uniuversity.mp4",
+      "to": "/uploads/img/yangilikar/video/Yangi yil-2025/Gulf uniuversity.mp4"
+    },
+    {
+      "table": "video",
+      "id": "219",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Yangi%20yil-2025/Indian%20Holiday.MOV",
+      "to": "/uploads/img/yangilikar/video/Yangi yil-2025/Indian Holiday.MOV"
+    },
+    {
+      "table": "video",
+      "id": "226",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Yangi%20yil-2025/90%20kun.mp4",
+      "to": "/uploads/img/yangilikar/video/Yangi yil-2025/90 kun.mp4"
+    },
+    {
+      "table": "video",
+      "id": "228",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Yangi%20yil-2025/Bitiruv%20kechasi-2025.MP4",
+      "to": "/uploads/img/yangilikar/video/Yangi yil-2025/Bitiruv kechasi-2025.MP4"
+    },
+    {
+      "table": "video",
+      "id": "231",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Yangi%20yil-2025/90kun.MOV",
+      "to": "/uploads/img/yangilikar/video/Yangi yil-2025/90kun.MOV"
+    },
+    {
+      "table": "video",
+      "id": "235",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Yangi%20yil-2025/bilimlar%20kuni.mp4",
+      "to": "/uploads/img/yangilikar/video/Yangi yil-2025/bilimlar kuni.mp4"
+    },
+    {
+      "table": "video",
+      "id": "236",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Yangi%20yil-2025/bilimlar%20kuni.mp4",
+      "to": "/uploads/img/yangilikar/video/Yangi yil-2025/bilimlar kuni.mp4"
+    },
+    {
+      "table": "video",
+      "id": "237",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Yangi%20yil-2025/Ustozlar%20bayrami.MP4",
+      "to": "/uploads/img/yangilikar/video/Yangi yil-2025/Ustozlar bayrami.MP4"
+    },
+    {
+      "table": "video",
+      "id": "239",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Yangi%20yil-2025/Anatomiya.mp4",
+      "to": "/uploads/img/yangilikar/video/Yangi yil-2025/Anatomiya.mp4"
+    },
+    {
+      "table": "video",
+      "id": "240",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Yangi%20yil-2025/Divali.mp4",
+      "to": "/uploads/img/yangilikar/video/Yangi yil-2025/Divali.mp4"
+    },
+    {
+      "table": "video",
+      "id": "241",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Yangi%20yil-2025/talantli%20talalabar.mp4",
+      "to": "/uploads/img/yangilikar/video/Yangi yil-2025/talantli talalabar.mp4"
+    },
+    {
+      "table": "video",
+      "id": "242",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/Yangi%20yil-2025/China%20student.MP4",
+      "to": "/uploads/img/yangilikar/video/Yangi yil-2025/China student.MP4"
+    },
+    {
+      "table": "video",
+      "id": "250",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/2026/14-Yanvar%20Vatan%20himoyachilari%20kuni.MP4",
+      "to": "/uploads/img/yangilikar/video/2026/14-Yanvar Vatan himoyachilari kuni.MP4"
+    },
+    {
+      "table": "video",
+      "id": "256",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/2026/Klinika%20ochilishi.mp4",
+      "to": "/uploads/img/yangilikar/video/2026/Klinika ochilishi.mp4"
+    },
+    {
+      "table": "video",
+      "id": "257",
+      "column": "video",
+      "from": "/uploads/img/yangilikar/video/2026/AI%20klinika%20ruxsor.mp4",
+      "to": "/uploads/img/yangilikar/video/2026/AI klinika ruxsor.mp4"
+    }
+  ],
+  "html_updates": 337
+}
