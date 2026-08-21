@@ -3,6 +3,7 @@
 namespace common\models;
 
 use yii\db\ActiveRecord;
+use yii\db\IntegrityException;
 
 /**
  * @property int $id
@@ -30,6 +31,20 @@ class TelegramImportLog extends ActiveRecord
     public static function findByMessage(int $chatId, int $messageId): ?self
     {
         return static::findOne(['chat_id' => $chatId, 'message_id' => $messageId]);
+    }
+
+    public static function claimMessage(int $chatId, int $messageId): bool
+    {
+        $row = new static([
+            'chat_id' => $chatId,
+            'message_id' => $messageId,
+        ]);
+
+        try {
+            return $row->insert(false);
+        } catch (IntegrityException $e) {
+            return false;
+        }
     }
 
     public static function remember(int $chatId, int $messageId, int $postId): void

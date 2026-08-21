@@ -11,9 +11,12 @@ use yii\web\ForbiddenHttpException;
 
 class TelegramNewsImporter
 {
+    private const DEFAULT_MAX_DOWNLOAD_BYTES = 52428800; // 50 MB
+
     private string $botToken;
     private string $channelId;
     private int $categoryId;
+    private int $maxDownloadBytes;
     /** @var class-string<\yii\db\ActiveRecord> */
     private string $postModelClass;
 
@@ -22,7 +25,11 @@ class TelegramNewsImporter
         $this->botToken = trim((string)(Yii::$app->params['telegramBotToken'] ?? getenv('TELEGRAM_BOT_TOKEN') ?: ''));
         $this->channelId = trim((string)(Yii::$app->params['telegramChannelId'] ?? getenv('TELEGRAM_CHANNEL_ID') ?: ''));
         $this->categoryId = (int)(Yii::$app->params['telegramNewsCategoryId'] ?? getenv('TELEGRAM_NEWS_CATEGORY_ID') ?: 1);
-        $this->postModelClass = (string)(Yii::$app->params['telegramPostModelClass'] ?? getenv('TELEGRAM_POST_MODEL_CLASS') ?: 'common\\models\\Post');
+        $this->postModelClass = (string)(Yii::$app->params['telegramPostModelClass'] ?? getenv('TELEGRAM_POST_MODEL_CLASS') ?: 'backend\\models\\Post');
+        $this->maxDownloadBytes = (int)(Yii::$app->params['telegramMaxDownloadBytes'] ?? getenv('TELEGRAM_MAX_MEDIA_BYTES') ?: self::DEFAULT_MAX_DOWNLOAD_BYTES);
+        if ($this->maxDownloadBytes <= 0) {
+            $this->maxDownloadBytes = self::DEFAULT_MAX_DOWNLOAD_BYTES;
+        }
 
         if ($this->botToken === '') {
             throw new RuntimeException('TELEGRAM_BOT_TOKEN sozlanmagan');
@@ -69,6 +76,14 @@ class TelegramNewsImporter
 
         if ($existing !== null) {
             return ['status' => 'duplicate', 'post_id' => $existing->post_id ? (int)$existing->post_id : null];
+        }
+
+        if (!TelegramImportLog::claimMessage($chatId, $messageId)) {
+            $existing = TelegramImportLog::findByMessage($chatId, $messageId);
+            return [
+                'status' => 'duplicate',
+                'post_id' => $existing && $existing->post_id ? (int)$existing->post_id : null,
+            ];
         }
 
         $postId = $this->createNewsPost($message);
@@ -299,6 +314,11 @@ class TelegramNewsImporter
             throw new RuntimeException('Telegram file_path topilmadi');
         }
 
+        $fileSize = (int)($response['result']['file_size'] ?? 0);
+        if ($fileSize > $this->maxDownloadBytes) {
+            throw new RuntimeException('Telegram fayl hajmi cheklovdan oshdi');
+        }
+
         $downloadUrl = 'https://api.telegram.org/file/bot' . $this->botToken . '/' . $filePath;
         $subdir = $bucket === 'file' ? 'files' : 'img';
         $uploadRoot = Yii::getAlias('@webroot/uploads/' . $subdir . '/yangilikar/telegram');
@@ -306,7 +326,10 @@ class TelegramNewsImporter
 
         $ext = preg_replace('/[^a-z0-9]/i', '', $extension) ?: 'bin';
         $safeName = 'tg_' . time() . '_' . bin2hex(random_bytes(4)) . '.' . $ext;
-        file_put_contents($uploadRoot . DIRECTORY_SEPARATOR . $safeName, $this->httpGetBinary($downloadUrl));
+        file_put_contents(
+            $uploadRoot . DIRECTORY_SEPARATOR . $safeName,
+            $this->httpGetBinary($downloadUrl, $this->maxDownloadBytes)
+        );
 
         return '/uploads/' . $subdir . '/yangilikar/telegram/' . $safeName;
     }
@@ -314,34 +337,64 @@ class TelegramNewsImporter
     /** @return array<string,mixed> */
     private function httpGetJson(string $url): array
     {
-        $decoded = json_decode($this->httpGetBinary($url), true);
+        $decoded = json_decode($this->httpGetBinary($url, $this->maxDownloadBytes), true);
         if (!is_array($decoded) || !($decoded['ok'] ?? false)) {
             throw new RuntimeException('Telegram API xatosi');
         }
         return $decoded;
     }
 
-    private function httpGetBinary(string $url): string
+    private function httpGetBinary(string $url, ?int $maxBytes = null): string
     {
+        $maxBytes = $maxBytes ?? $this->maxDownloadBytes;
+        if ($maxBytes <= 0) {
+            $maxBytes = self::DEFAULT_MAX_DOWNLOAD_BYTES;
+        }
+
         if (function_exists('curl_init')) {
+            $buffer = '';
             $ch = curl_init($url);
             curl_setopt_array($ch, [
-                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_RETURNTRANSFER => false,
                 CURLOPT_FOLLOWLOCATION => true,
                 CURLOPT_CONNECTTIMEOUT => 20,
                 CURLOPT_TIMEOUT => 180,
+                CURLOPT_WRITEFUNCTION => static function ($curl, string $data) use (&$buffer, $maxBytes) {
+                    $length = strlen($data);
+                    if ($length === 0) {
+                        return 0;
+                    }
+                    if (strlen($buffer) + $length > $maxBytes) {
+                        return 0;
+                    }
+                    $buffer .= $data;
+                    return $length;
+                },
             ]);
-            $body = curl_exec($ch);
+            $ok = curl_exec($ch);
             $code = (int)curl_getinfo($ch, CURLINFO_HTTP_CODE);
             curl_close($ch);
-            if ($body === false || $code >= 400) {
+            if ($ok === false || $code >= 400) {
                 throw new RuntimeException('HTTP yuklab olish xatosi');
             }
-            return (string)$body;
+            if (strlen($buffer) > $maxBytes) {
+                throw new RuntimeException('Yuklab olingan fayl hajmi cheklovdan oshdi');
+            }
+            return $buffer;
         }
-        $body = file_get_contents($url);
+
+        $context = stream_context_create([
+            'http' => [
+                'timeout' => 180,
+                'follow_location' => 1,
+            ],
+        ]);
+        $body = file_get_contents($url, false, $context);
         if ($body === false) {
             throw new RuntimeException('HTTP yuklab olish xatosi');
+        }
+        if (strlen($body) > $maxBytes) {
+            throw new RuntimeException('Yuklab olingan fayl hajmi cheklovdan oshdi');
         }
         return $body;
     }
