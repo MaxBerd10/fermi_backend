@@ -62,6 +62,13 @@ class IntegrationsController extends Controller
             $result = (new TelegramNewsImporter())->handleUpdate($payload);
         } catch (ForbiddenHttpException $e) {
             throw $e;
+        } catch (RuntimeException $e) {
+            if ($e->getMessage() === 'duplicate_message') {
+                return ['success' => true, 'data' => ['status' => 'duplicate']];
+            }
+            Yii::error($e->getMessage(), __METHOD__);
+            Yii::$app->response->statusCode = 500;
+            return ['success' => false, 'error' => 'import_failed'];
         } catch (\Throwable $e) {
             Yii::error($e->getMessage(), __METHOD__);
             Yii::$app->response->statusCode = 500;

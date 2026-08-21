@@ -74,22 +74,45 @@ class TelegramNewsImporter
             return ['status' => 'created', 'post_id' => $postId];
         }
 
-        if ($existing !== null) {
-            return ['status' => 'duplicate', 'post_id' => $existing->post_id ? (int)$existing->post_id : null];
+        if ($existing !== null && $existing->post_id) {
+            return ['status' => 'duplicate', 'post_id' => (int)$existing->post_id];
         }
 
-        if (!TelegramImportLog::claimMessage($chatId, $messageId)) {
-            $existing = TelegramImportLog::findByMessage($chatId, $messageId);
-            return [
-                'status' => 'duplicate',
-                'post_id' => $existing && $existing->post_id ? (int)$existing->post_id : null,
-            ];
+        if ($existing !== null && !$existing->post_id) {
+            $existing->delete();
         }
 
-        $postId = $this->createNewsPost($message);
-        TelegramImportLog::remember($chatId, $messageId, $postId);
+        return [
+            'status' => 'created',
+            'post_id' => $this->createNewsPostWithClaim($chatId, $messageId, $message),
+        ];
+    }
 
-        return ['status' => 'created', 'post_id' => $postId];
+    /** @param array<string,mixed> $message */
+    private function createNewsPostWithClaim(int $chatId, int $messageId, array $message): int
+    {
+        $transaction = Yii::$app->db->beginTransaction();
+
+        try {
+            if (!TelegramImportLog::claimMessage($chatId, $messageId)) {
+                $claimed = TelegramImportLog::findByMessage($chatId, $messageId);
+                if ($claimed !== null && $claimed->post_id) {
+                    $transaction->rollBack();
+                    throw new RuntimeException('duplicate_message');
+                }
+
+                throw new RuntimeException('Telegram post band qilinmadi');
+            }
+
+            $postId = $this->createNewsPost($message);
+            TelegramImportLog::remember($chatId, $messageId, $postId);
+            $transaction->commit();
+
+            return $postId;
+        } catch (\Throwable $e) {
+            $transaction->rollBack();
+            throw $e;
+        }
     }
 
     /** @param array<string,mixed> $message */
