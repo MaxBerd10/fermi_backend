@@ -97,7 +97,6 @@ class TelegramNewsImporter
             if (!TelegramImportLog::claimMessage($chatId, $messageId)) {
                 $claimed = TelegramImportLog::findByMessage($chatId, $messageId);
                 if ($claimed !== null && $claimed->post_id) {
-                    $transaction->rollBack();
                     throw new RuntimeException('duplicate_message');
                 }
 
@@ -110,7 +109,9 @@ class TelegramNewsImporter
 
             return $postId;
         } catch (\Throwable $e) {
-            $transaction->rollBack();
+            if ($transaction->getIsActive()) {
+                $transaction->rollBack();
+            }
             throw $e;
         }
     }
