@@ -75,6 +75,7 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                'POST v1/integrations/telegram/webhook' => 'integrations/telegram-webhook',
                 'v1/auth/<action:[\w\-]+>' => 'auth/<action>',
                 'v1/site/<action:[\w\-]+>' => 'site/<action>',
 

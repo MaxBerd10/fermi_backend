@@ -36,3 +36,4 @@
 # Unrelated duplicate React app copy (the real one lives in ../design) —
 # not part of this PHP backend.
 /web
+.env
