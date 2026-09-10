@@ -67,6 +67,9 @@ return [
                 [
                     'class' => 'yii\log\FileTarget',
                     'levels' => ['error', 'warning'],
+                    // $_SERVER carries every env var (API tokens, DB creds) in plaintext —
+                    // never let request superglobals into the log file.
+                    'logVars' => [],
                 ],
             ],
         ],
