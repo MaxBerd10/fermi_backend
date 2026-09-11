@@ -54,6 +54,11 @@ class TelegramNewsImporter
 
         $this->assertAllowedChannel($message);
 
+        $hasCaption = trim((string)($message['text'] ?? $message['caption'] ?? '')) !== '';
+        if (!$hasCaption) {
+            return ['status' => 'ignored', 'reason' => 'no_caption_text'];
+        }
+
         $chatId = (int)($message['chat']['id'] ?? 0);
         $messageId = (int)($message['message_id'] ?? 0);
         if ($chatId === 0 || $messageId === 0) {
@@ -69,9 +74,18 @@ class TelegramNewsImporter
                 return ['status' => 'updated', 'post_id' => (int)$existing->post_id];
             }
 
-            $postId = $this->createNewsPost($message);
-            TelegramImportLog::remember($chatId, $messageId, $postId);
-            return ['status' => 'created', 'post_id' => $postId];
+            if ($existing !== null && !$existing->post_id) {
+                $existing->delete();
+            }
+
+            // Same claim-based locking as the non-edit path below — without it, a slow
+            // first request (e.g. still downloading media) plus Telegram's webhook retry
+            // for the same edited_channel_post can run this branch twice concurrently,
+            // each creating its own duplicate post.
+            return [
+                'status' => 'created',
+                'post_id' => $this->createNewsPostWithClaim($chatId, $messageId, $message),
+            ];
         }
 
         if ($existing !== null && $existing->post_id) {
