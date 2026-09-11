@@ -55,7 +55,7 @@
             "yiisoft/yii2-composer": true
         },
         "platform": {
-            "php": "7.4.29"
+            "php": "8.2.0"
         }
     },
     "repositories": [
