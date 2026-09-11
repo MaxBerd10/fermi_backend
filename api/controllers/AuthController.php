@@ -62,8 +62,7 @@ class AuthController extends BaseApiController
         if (!$form->signup()) {
             return $this->fail('SIGNUP_FAILED', 'Ro\'yxatdan o\'tishda xatolik yuz berdi.', null, 500);
         }
-        $user = User::findByUsername($form->username);
-        return $this->issueTokens($user);
+        return $this->success(['verificationRequired' => true]);
     }
 
     public function actionLogin()
