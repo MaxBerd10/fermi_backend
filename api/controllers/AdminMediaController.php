@@ -59,7 +59,7 @@ class AdminMediaController extends BaseApiController
         $requested = (string) Yii::$app->request->get('path', '');
         $target = realpath($root . '/' . ltrim($requested, '/'));
 
-        if ($target === false || strpos($target, $root) !== 0 || !is_dir($target)) {
+        if ($target === false || !is_dir($target) || !($target === $root || strpos($target, $root . DIRECTORY_SEPARATOR) === 0)) {
             return $this->fail('INVALID_PATH', 'Noto\'g\'ri manzil.', null, 422);
         }
 
